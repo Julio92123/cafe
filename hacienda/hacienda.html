@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacienda MXRP</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e6f2e6;
+            color: #2e4d2e;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+        }
+        h2 {
+            color: #1b5e20;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .clickable {
+            color: #2e7d32;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .dropdown {
+            display: none;
+            margin-top: 10px;
+        }
+        .dropdown.show {
+            display: block;
+        }
+        .discord-button {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 12px 25px;
+            background-color: #5865F2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        function toggleDropdown(id) {
+            const element = document.getElementById(id);
+            element.classList.toggle('show');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Hacienda MXRP</h1>
+        <p>Secretaría de Hacienda en el mundo de rol de México</p>
+    </header>
+
+    <section>
+        <div class="card">
+            <h2>¿Qué es la Secretaría de Hacienda?</h2>
+            <p>Es quien revisa ingresos, gastos y patrimonio de un estado o país, así como a la entidad gubernamental que se encarga de su administración. En México, la Secretaría de Hacienda y Crédito Público (SHCP) es la encargada de la gestión de las finanzas públicas, la política fiscal y económica, y la regulación del sistema financiero.</p>
+        </div>
+
+        <div class="card">
+            <h2 class="clickable" onclick="toggleDropdown('funciones')">Funciones (Click)</h2>
+            <div class="dropdown" id="funciones">
+                <ul>
+                    <li><strong>Ingresos públicos:</strong> Incluyen impuestos, derechos, productos, aprovechamientos y cualquier otro ingreso que el gobierno obtiene.</li>
+                    <li><strong>Gastos públicos:</strong> Son las erogaciones que el gobierno hace para financiar sus actividades, como infraestructura, servicios sociales y salarios públicos.</li>
+                    <li><strong>Patrimonio:</strong> Son los bienes y activos que el estado posee, como inmuebles, maquinaria, y otros activos.</li>
+                    <li><strong>Hacienda pública:</strong> Es la disciplina que estudia la administración de estos recursos públicos.</li>
+                    <li><strong>La SHCP en México:</strong>
+                        <ul>
+                            <li>Es una dependencia del gobierno federal, responsable de la política fiscal y económica.</li>
+                            <li>Se encarga de recaudar los ingresos fiscales, gestionar el gasto público y administrar la deuda pública.</li>
+                            <li>Supervisa el sistema financiero y regula las operaciones de instituciones financieras.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="clickable" onclick="toggleDropdown('tramites')">Trámites a realizar en SHCP (Click)</h2>
+            <div class="dropdown" id="tramites">
+                <h3 class="clickable" onclick="toggleDropdown('cuenta')">Creación de una cuenta en SHCP</h3>
+                <div class="dropdown" id="cuenta">
+                    <ul>
+                        <li>1.- Dirígete al servidor de Discord.</li>
+                        <li>2.- Abre ticket en el apartado correspondiente.</li>
+                        <li>3.- Espera que un asesor esté a tu disposición.</li>
+                    </ul>
+                </div>
+
+                <h3 class="clickable" onclick="toggleDropdown('impuestos')">Pago de impuestos personales</h3>
+                <div class="dropdown" id="impuestos">
+                    <ul>
+                        <li>1.- Dirígete al servidor de Discord de Hacienda (server).</li>
+                        <li>2.- Dirígete al canal Soporte y selecciona la categoría correspondiente.</li>
+                        <li>3.- Espera que un asesor te atienda.</li>
+                        <li>4.- Si tienes algún problema hazlo saber en el buzón (santi.1415).</li>
+                    </ul>
+                </div>
+
+                <h3>Pago de Tenencia</h3>
+                <ul>
+                    <li>1.- Dirígete al servidor de Discord.</li>
+                    <li>2.- Abre ticket en el apartado correspondiente.</li>
+                    <li>3.- Espera que un asesor esté disponible para ti.</li>
+                    <li><strong>Te recordamos que para pagar tu tenencia es necesario registrar tu carro.</strong></li>
+                </ul>
+
+                <h3>Registro Vehicular</h3>
+                <ul>
+                    <li>1.- Dirígete al servidor de Discord.</li>
+                    <li>2.- Abrir ticket en el apartado correspondiente.</li>
+                    <li>3.- Llevar los siguientes documentos:</li>
+                    <ul>
+                        <li>INE (Vigente)</li>
+                        <li>Foto del Vehículo (ERLC)</li>
+                        <li>Foto de la placa (Placa del vehículo)</li>
+                    </ul>
+                    <li>4.- Esperar a tu asesor.</li>
+                </ul>
+
+                <h3>Soporte</h3>
+                <p>En este apartado podrás realizar una queja, reporte sobre el personal. También podrás consultar alguna duda que tengas.</p>
+            </div>
+        </div>
+
+        <a class="discord-button" href="https://discord.gg/yHf5pU9xNq" target="_blank">Únete al Servidor de Discord</a>
+        <a class="discord-button" href="https://discord.com/channels/1370253494409498706/1370253494719742001" target="_blank">Soporte Técnico Discord</a>
+
+        <footer style="text-align:center; padding: 20px; color: #4e944f;">
+            <strong>Hacienda agradece.</strong>
+        </footer>
+    </section>
+  
+<p style="text-align: center; font-size: 12px; color: #888888; margin-top: 40px;">© 2025 Hacienda MXRP. Todos los derechos de la Pagina son de 65aster Desarollos.</p>
+<p style="text-align: center; font-size: 12px; color: #888888; margin-top: 40px;">MXRP FOR LIFE </p>
+
+
+
+
+<!-- Imagen en esquina inferior derecha -->
+<img src="https://i.postimg.cc/DJBtsBV6/file-00000000514061f7946f013f3ed0a347.png" 
+     alt="Hacienda MXRP Logo"
+     style="position: fixed; bottom: 10px; right: 10px; width: 80px; opacity: 0.8; z-index: 999; border-radius: 8px;">
+
+
+<!-- Imagen en esquina superior izquierda (ya incluida anteriormente) -->
+<img src="https://i.postimg.cc/DJBtsBV6/file-00000000514061f7946f013f3ed0a347.png" 
+     alt="Hacienda MXRP Logo"
+     style="position: fixed; top: 15px; left: 15px; width: 70px; opacity: 0.9; z-index: 999; border-radius: 8px;">
+
+<!-- Imagen en esquina superior derecha (nueva imagen CDMX) -->
+<img src="https://i.postimg.cc/65dSbh2v/CDMX-Logo-svg.png" 
+     alt="CDMX Logo"
+     style="position: fixed; top: 15px; right: 15px; width: 70px; opacity: 0.9; z-index: 999; border-radius: 8px;">
+
+</body>
+</html>
+
